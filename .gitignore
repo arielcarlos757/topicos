@@ -1,0 +1,61 @@
+# Ignorar todo por defecto
+*
+
+# Permitir solo archivos .c y .h
+!*.c
+!*.h
+
+# Excepciones específicas (necesarias para Git)
+!.gitignore
+!README.md
+!LICENSE
+
+# Permitir directorios Knight y main
+!SaintSeiyaRPG/
+!Knight/
+!main/
+
+# Permitir archivos .c y .h dentro de Knight y main
+!Knight/*.c
+!Knight/*.h
+!main/*.c
+!main/*.h
+
+
+
+# Archivos específicos de CodeBlocks a ignorar
+*.cbp
+*.layout
+*.depend
+*.workspace
+*.tags
+
+# Archivos de compilación y ejecutables
+*.o
+*.obj
+*.exe
+*.out
+*.a
+*.so
+*.dll
+*.lib
+
+# Directorios comunes a ignorar
+bin/
+obj/
+Debug/
+Release/
+build/
+.vscode/
+.idea/
+
+# Archivos de usuario y temporales
+*.swp
+*.swo
+*~
+*.bak
+*.tmp
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
