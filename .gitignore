@@ -11,11 +11,17 @@
 !LICENSE
 
 # Permitir directorios Knight y main
+!Assets/dialogs/
+!Assets/
+!Story/
 !SaintSeiyaRPG/
 !Knight/
 !main/
 
 # Permitir archivos .c y .h dentro de Knight y main
+!Assets/story/*.txt
+!Story/*.c
+!Story/*.h
 !Knight/*.c
 !Knight/*.h
 !main/*.c
