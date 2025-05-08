@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <unistd.h> // Para sleep()
 #include "../Knight/knights.h"
+#include "../Story/story.h"
+
 
 // Función para limpiar la pantalla (multi-plataforma)
 void clear_screen() {
@@ -45,13 +47,14 @@ int main_menu() {
 void intro_cinematic() {
     clear_screen();
     printf("\033[1;34m");
-    const char *message = "Hace años, la diosa Athena reencarnó como Saori Kido...\n";
+  /*  const char *message = "Hace años, la diosa Athena reencarnó como Saori Kido...\n";
     for (int i = 0; message[i]; i++) {
         putchar(message[i]);
         fflush(stdout);
         usleep(50000); // 50ms entre caracteres
     }
-    sleep(2);
+    sleep(2);*/
+    play_story_arc("Assets/story/sanctuary_arc.txt");
     printf("\033[0m");
 }
 

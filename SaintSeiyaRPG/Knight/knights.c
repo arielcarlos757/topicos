@@ -62,3 +62,4 @@ void restore_cosmos(Knight *knight, int amount) {
     knight->cosmos += amount;
     if (knight->cosmos > 100) knight->cosmos = 100;
 }
+ 
