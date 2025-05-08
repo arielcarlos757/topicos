@@ -1,0 +1,16 @@
+SCENE:0
+El Santuario, bajo el control del Patriarca impostor (Saga de Géminis), es un laberinto de desafíos cósmicos.Athena ha sido herida por una flecha dorada, y su vida pende de un hilo. Seiya (el jugador) y sus compañeros deben superar las Doce Casas del Zodíaco, custodiadas por los Caballeros de Oro, para alcanzar la Cámara del Patriarca y salvar a la diosa.Has llegado al Santuario. Ante ti se alzan las 12 Casas del Zodíaco.
+CHOICE:1:Avanzar hacia la Casa de Aries
+CHOICE:2:Consultar a Athena
+CHOICE:3:Reunir al grupo
+
+SCENE:1
+Mu de Aries bloquea el paso con su Muro de Cristal.
+CHOICE:4:Atacar el muro
+CHOICE:5:Usar el Séptimo Sentido
+CHOICE:-1:Retirarse
+
+SCENE:4
+¡El muro se rompe! Mu sonríe y te permite pasar.
+CHOICE:6:Continuar a Tauro
+CHOICE:-1:Fin del demo
