@@ -1,0 +1,3 @@
+ID|DIALOGO|ID_OPC1|COMBAT1|ITEM1|ID_OPC2|COMBAT2|ITEM2|ID_OPC3|COMBAT3|ITEM3
+0|Llegas al Santuario...|1|0|-1|2|1|101|3|0|-1
+1|Avanzas hacia Aries...|4|1|102|-1|-1|-1|-1|-1|-1
