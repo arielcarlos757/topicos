@@ -4,6 +4,7 @@
 # Permitir solo archivos .c y .h
 !*.c
 !*.h
+!*.txt
 
 # Excepciones específicas (necesarias para Git)
 !.gitignore
@@ -15,6 +16,7 @@
 !Assets/
 !Story/
 !SaintSeiyaRPG/
+!KnightOfZodiacRPG/
 !Knight/
 !main/
 
@@ -26,6 +28,17 @@
 !Knight/*.h
 !main/*.c
 !main/*.h
+!House/*.h
+!House/*.c
+!KnightOfZodiacRPG/*.c
+!KnightOfZodiacRPG/Knight/*.h
+!KnightOfZodiacRPG/Knight/*.c
+!KnightOfZodiacRPG/Story/*.c
+!KnightOfZodiacRPG/Story/*.hc
+!KnightOfZodiacRPG/Houses/*.c
+!KnightOfZodiacRPG/Houses/*.h
+!KnightOfZodiacRPG/Assets/story/*.txt
+
 
 
 
