@@ -88,7 +88,7 @@ int main(void) {
     SceneNode* story = load_ternary_story("../Assets/story/sanctuary_arc_v2.txt");
     printf("\n¡Que el Cosmo te acompañe!\n");
     play_ternary_scene(story,houses, players, golden_knigths);
-    //print_tree(story, 0);
+    print_tree(story, 0);
 
     if (players[0].is_alive)
         printf("\n¡Haz vencido al patriarca!\n");

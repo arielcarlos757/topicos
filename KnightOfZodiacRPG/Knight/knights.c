@@ -8,7 +8,7 @@
 // Inicializa los 5 caballeros con stats base
 void initialize_knights(Knight party[]) {
     Knight seiya = {
-        "Seiya", PEGASUS, 100, 50, 20000, 1000,
+        "Seiya", PEGASUS, 100, 50, 2000,100,
         {"Meteoro de Pegaso", "Cometa de Pegaso", "Final de Pegaso"}, 1
     };
     Knight shiryu = {

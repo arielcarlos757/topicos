@@ -168,11 +168,15 @@ void play_ternary_scene(SceneNode* current, House* houses, Knight* players, Knig
     for (int i = 0; i < MAX_CHOICES; i++) {
         if (current->choices[i]) {
            // if (current->required_items[i] == -1 || has_item(player, current->required_items[i])) {
-            if (current->required_items[i] == -1 || true) {
-                printf("\033[1;36m%d. %s\033[0m\n", valid_choices + 1, current->choices[i]->dialogue);
-                choice_map[valid_choices] = i;
+            if (!players[0].is_alive) {
+                printf("\033[1;36m%d. %s\033[0m\n", valid_choices + 2, current->choices[!players[0].is_alive]->dialogue);
+                choice_map[valid_choices] = !players[0].is_alive;
                 valid_choices++;
+                break;
             }
+            printf("\033[1;36m%d. %s\033[0m\n", valid_choices + 1, current->choices[i]->dialogue);
+            choice_map[valid_choices] = i;
+            valid_choices++;
         }
     }
 
@@ -195,6 +199,11 @@ void play_ternary_scene(SceneNode* current, House* houses, Knight* players, Knig
         result = start_combat(&golden_knights[current->house_id], &players[0]);
         if (result == -1) {
             players[0].is_alive = 0;
+        }
+        if (result == 1) {
+            SceneNode* n = current->choices[0]->choices[1];
+            free_ternary_tree(n);
+            current->choices[0]->choices[1] = NULL;
         }
     }
 
@@ -220,6 +229,7 @@ int start_combat(Knight* enemy,Knight* player) {
         // Verificar si el enemigo fue derrotado
         if (determine_winner(player, enemy) == 1) {
             player->cosmos += 30; // Recompensa por victoria
+            result = 1;
             break;
         }
 
